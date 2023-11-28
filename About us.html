@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style1.css">
+
+    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About us</title>
+</head>
+<style>
+    .faicons {
+        font-size: 100px;
+        color: yellow;
+    }
+
+    .imgau {
+        position: relative;
+
+    }
+
+    .imgau img {
+        /* position: absolute; */
+        width: 100%;
+    }
+
+    .imgtxt {
+        position: absolute;
+        bottom: 35%;
+        /* top: 50%; */
+        left: 17%;
+        font-size: 32px;
+        color: #ffffff;
+        /* right: 50%; */
+        /* width: 100%; */
+
+    }
+
+    .batchau {
+        position: absolute;
+        right: 0px;
+        bottom: 7px;
+        padding: 0.7%;
+        color: white;
+        background-color: rgb(1, 1, 19);
+        border-top-left-radius: 10px;
+    }
+
+    .imgtxt h2 {
+
+        color: #ffe600;
+        padding-left: 19px;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    .imgtxt h1 {
+        color: #ffe600;
+        padding-left: 5px;
+        font-size: 3em;
+
+    }
+
+    #teamimage {
+        opacity: 0.8;
+    }
+
+    /* .aboutustopsection {
+        position: relative;
+
+    } */
+
+
+
+
+
+
+
+    /* .aboutus {
+       
+        position: relative;
+
+     
+    }
+
+    .imgau {
+        background-color: rgb(255, 255, 255);
+        height: 84vh;
+        position: sticky;
+        top: 0px;
+        box-sizing: border-box;
+    }
+
+    .imgau img {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+
+
+    } */
+
+    /* .imgtxt {
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+        font-size: 3em;
+        color: rgb(235, 239, 239);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+
+
+    }
+
+    .imgtxt h2 {
+        font-size: 0.7em;
+        color: rgba(44, 14, 107);
+    } */
+    /* 
+    .imgtxt button {
+        background-color: transparent;
+        border: 2.5px solid rgba(4, 19, 70, 0.542);
+        padding: 14px 23px;
+        border-radius: 9px;
+        position: absolute;
+        cursor: pointer;
+
+        margin-top: 20px;
+        cursor: pointer;
+
+    }
+
+    .imgtxt button:hover {
+        animation: colorChange 0.4s linear 0s 1 forwards;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .imgtxt a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    } */
+
+
+    @keyframes colorChange {
+        0% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: rgb(38, 38, 71);
+            color: rgb(255, 255, 255);
+        }
+    }
+
+
+    #readhere {
+        margin: 90px;
+    }
+
+
+    .auintro {
+
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        /* background-color: #c7a33f; */
+    }
+
+    .aboutusrnsit {
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        /* margin: 200px 130px 10px 130px; */
+        /* gap: 200px; */
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        /* background-color: yellow; */
+        border-radius: 7px;
+        background-color: #f3f2f2;
+        /* box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.347); */
+
+    }
+
+    .aurnsittxt {
+        text-align: justify;
+        /* padding: 11px; */
+        /* background-color: #f0f0f0; */
+        max-width: 650px;
+        /* padding: 100px 0px; */
+    }
+
+
+    .aurnsitimg {
+        width: 260px;
+        /* background-color: #333; */
+    }
+
+    .aurnsitimg img {
+        height: 200px;
+        width: 100%;
+        /* padding: 100px; */
+        /* background-color: #333; */
+    }
+
+    .aurnsitimg h4 {
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        /* padding: 100px; */
+        /* background-color: #333; */
+    }
+
+    .aurnsitimg,
+    .aurnsittxt {
+
+        margin: 10px;
+
+    }
+
+    .classaboutped {
+        border-radius: 7px;
+        /* box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.347); */
+        background-color: #f3f2f2;
+        display: flex;
+        /* margin: 100px 130px 10px 130px;
+        /* gap: 200px; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        /* background-color: #100c7d; */
+    }
+
+    .pedimg {
+        width: 260px;
+        /* background-color: #333; */
+        margin: 10px;
+
+    }
+
+    .pedimg img {
+        height: 270px;
+        width: 100%;
+
+
+    }
+
+    .pedimg h4 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .pedtext {
+        /* padding: 11px; */
+        margin: 10px;
+        /* background-color: #f0f0f0; */
+        max-width: 650px;
+        text-align: justify;
+        /* padding: 100px 0px; */
+    }
+
+    @media (max-width: 1200px) {
+
+        .imgtxt {
+            font-size: 25px;
+            bottom: 20%;
+        
+        left: 10%;
+        }
+        .au-readmore{
+           padding: 4px 10px;
+        }
+        .au-readmore a{
+          font-size: 11px;
+        }
+        .eventbyrsc-name{
+          font-size: 1x;
+        }
+
+    }
+
+    @media (max-width: 851px) {
+
+        .aurnsittxt h1,
+        .pedtext h1 {
+            text-align: center;
+        }
+
+        .imgtxt {
+            font-size: 17px;
+        }
+        .imgtxt h2{
+             font-size: 13px;
+        }
+        .au-readmore{
+           padding: 3px 8px;
+        }
+        .au-readmore a{
+          font-size: 8px;
+        }
+        .eventbyrsc-name{
+          font-size: 13x;
+        }
+
+
+
+    }
+
+    @media (max-width: 651px) {
+        .eventbyrsc-name{
+          font-size: 11x;
+        }
+       
+        #teamimage{
+          height: 300px;
+        }
+        .imgtxt {
+            font-size: 10px;
+        }
+    
+        .imgtxt h2{
+             font-size: 6px;
+        }
+        .au-readmore{
+            /* display: none; */
+           padding: 2px;
+           border-radius: 50%;
+           margin-left: 30px;
+           margin-top: 10px;
+        }
+        .au-readmore a{
+            font-size: 4px;
+        }
+
+    }
+    @media (max-width: 451px) {
+        .imgtxt {
+            font-size: 7px;
+        }
+        .au-readmore{
+           padding: 1px 2px;
+           border-radius: 50%;
+        }
+        .au-readmore a{
+            font-size: 4px;
+        }
+    }
+    @media (max-width: 351px) {
+        .imgtxt {
+            font-size: 5px;
+        }
+        
+        .imgtxt h2{
+             font-size: 3px;
+        }
+        .au-readmore a{
+            font-size: 3px;
+        }
+        .au-readmore{
+           /* padding: 1px 1px; */
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .events-table {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .events-table th,
+    .events-table td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+        /* Add borders to table cells */
+    }
+
+    .events-table th {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .eventbyrsc-name {
+        font-weight: bold;
+    }
+
+    .eventbyrsc-year {
+        color: #888;
+    }
+
+
+
+    .heading {
+        text-align: center;
+        padding: 100px 0;
+        margin-top: 70px;
+    }
+
+    .committees {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .committee-card {
+        background-color: rgb(223 181 73 / 86%);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .committee-card:hover {
+        transform: scale(1.04);
+    }
+
+    .detailau {
+        color: #100c7d;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        border-top: 0.8px solid rgba(196, 196, 196, 0.626);
+        border-bottom: 0.8px solid rgba(196, 196, 196, 0.626);
+        margin: 50px 30px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .detailau p {
+        text-align: justify;
+    }
+
+    .vtutournaments {
+        text-align: center;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .auvtu {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin: 2px; */
+        text-align: justify;
+        /* padding: 2px; */
+        gap: 100px;
+        margin: 0px 140px;
+        border-radius: 12px;
+        border: 1px solid rgb(211, 211, 211);
+        margin-bottom: 40px;
+        background-color: white;
+    }
+
+    .auvtuimg img {
+        /* border-radius: 50%; */
+        width: 100%;
+        height: 340px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+    }
+
+    .auvtutxt {
+        padding: 7px 30px;
+        margin-top: -80px;
+
+    }
+
+
+
+    .allbyrsc {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .rsc-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .rsc-table th,
+    .rsc-table td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .rsc-table th {
+        background-color: #c7a33f;
+        color: #fff;
+    }
+
+    /* Red, Blue, Gold theme */
+    .rsc-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .rsc-table tr:hover {
+        background-color: #ddd;
+    }
+
+    .box h1 {
+        color: #c7a33f;
+    }
+
+    .aboutusrsceventgallery {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .gallery {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery-item {
+
+        flex: 0 0 calc(33.33% - 10px);
+        margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .vision-mission {
+        background: linear-gradient(rgb(223 181 73 / 86%), #ddd0a1 50%);
+        ;
+        color: #06062f;
+        /* Blue text */
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        /* Center-align the text */
+        margin: 80px auto;
+        width: 75%;
+        /* Center the div horizontally */
+        /* max-width: 960px; */
+        /* Limit the width for readability */
+    }
+
+    .vision-heading,
+    .mission-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .mission-list {
+
+        margin-left: 20px;
+        text-align: left;
+        /* Left-align the list items */
+    }
+
+    .button-veiwallevents {
+        border: none;
+        color: rgb(232, 232, 228);
+        color: black;
+        padding: 20px 30px;
+        cursor: pointer;
+    }
+
+    .button-veiwallevents:hover {
+        transform: scale(1.04);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/page1andlogos/RNS_logo.png" height="76" width="76"
+                    style="margin: 0px 10px;"></a>
+            <h2 class="web-name">RNSIT Sports Club</h2>
+
+        </div>
+
+
+        <ul class="v-class">
+            <li class="nav-list"><a href="index.html" >Home</a></li>
+            <li class="nav-list"><a href="stepup.html">Step-Up</a></li>
+            <li class="nav-list"><a href="ourteam.html">Agones</a></li>
+            <li class="nav-list"><a href="About us.html" class="lighten">About Us</a></li>
+            <!-- <li class="nav-list"><a href="enquire.html">Enquire</a></li> -->
+
+        </ul>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/page1andlogos/logo.png" height="110" width="110"
+                    style="margin-top: 10px;  margin-right: 20px;"></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+
+    <div class="aboutus">
+        <div class="aboutustopsection">
+            <div class="imgau">
+                <img id="teamimage" src="assets/images/Aboutus/au1.jpeg" alt="">
+                <!-- <img src="assets/images/au2.jpeg" alt=""> -->
+                <div class="imgtxt">
+                    <h1>About us</h1>
+                    <h2>RNSIT Sports Club</h2>
+                    <button class="au-readmore"> <a href="#readhere">Read More</a></button>
+                </div>
+                <div class="batchau">
+                    <h3 id="#teamau">RSC 2022-23</h3>
+                </div>
+                <div class="arrowsau">
+                    <a class="prev" onclick="nextslide()">&#10094;</a>
+                    <a class="next" onclick="prevslide()">&#10095;</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="readhere">
+    </div>
+
+
+
+
+
+
+
+
+        <div class="aboutusrnsit">
+            <div class="aurnsittxt">
+                <h1>R.N.S.Intitute Of Technology</h1>
+                <h3>Bangalore, Karnataka</h3>
+                <p>RNS Institute of Technology, familiar as RNSIT was established in the year 2001. It is the brainchild
+                    of
+                    Dr. R. N. Shetty, well known industrialist, and a great philanthropist. The institution was
+                    established
+                    with a sole purpose of imparting quality education in Engineering, Technology and Management. Being
+                    one
+                    of the premier engineering colleges in the country RNSIT is marching towards placing itself in the
+                    global map by excelling in academics and placements.
+
+                </p>
+            </div>
+            <div class="aurnsitimg">
+                <img src="assets/images/page1andlogos/rnsit1.jpg" alt="">
+                <h4>RNS Institute of Technology</h4>
+            </div>
+        </div>
+
+
+        <div class="classaboutped">
+            <div class="pedimg">
+                <img src="assets/images/Aboutus/pratap sir.jpeg">
+                <h4>Physical Education Director</h4>
+            </div>
+            <div class="pedtext">
+                <h1>Physical Education Director</h1>
+                <h3>Mr.Pratap N </h3>
+                <p>Mr. Pratap Raj, our esteemed Physical Education Director, stands at the forefront of the RNSIT Sports
+                    Club's journey. With his visionary leadership, he has guided the club to achieve remarkable
+                    milestones and foster a thriving community of sports enthusiasts. His passion for sports, dedication
+                    to excellence, and unwavering commitment to nurturing talent have shaped the club's identity and
+                    purpose.
+
+                    Under his guidance, the RNSIT Sports Club has not only excelled in various sporting disciplines but
+                    has also become a symbol of unity, teamwork, and perseverance</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="heading">
+        <h2 style="font-size: 55px; margin-bottom: 80px;">RSC Commitees</h2>
+        <div class="committees">
+            <div class="committee-card">
+                <h3>Design and Photography</h3>
+                <p>Creation of Promotional Content and photography </p>
+            </div>
+            <div class="committee-card">
+                <h3>Logistics</h3>
+                <p>Procurement and management of required resources for the event</p>
+            </div>
+            <div class="committee-card">
+                <h3>Sponsorship Committee</h3>
+                <p>Enticement of Sponsors for the events.</p>
+            </div>
+            <div class="committee-card">
+                <h3>Hospitality and Deco Team</h3>
+                <p>Hosting the guest and taking care of guest with warmth and decoration.</p>
+            </div>
+            <div class="committee-card">
+                <h3>Events Team</h3>
+                <p>Ensure smooth conduction of events with discipline</p>
+            </div>
+            <div class="committee-card">
+                <h3>Drafting Team</h3>
+                <p>Responsible for official letters, permission, database and reports. </p>
+            </div>
+            <div class="committee-card">
+                <h3>Marketing Team</h3>
+                <p>Promotion of events to pull maximum crowd</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="detailau">
+        <h1>RNSIT SPORTS CLUB</h1>
+        <h5>Namma Sports Club</h5>
+        <p>
+            The RSC (College Sports Club) serves as the official hub for all sporting activities within our college
+            community, comprising two integral wings: the Promotional Activity Wing, which orchestrates various
+            sports-related events and initiatives, and the Sports Wing, responsible for overseeing interdepartmental
+            competitions and recreational activities. In addition to fostering a culture of physical fitness and
+            sportsmanship within our college, RSC also takes pride in representing our institution at the VTU
+            Tournaments and organizing fundraising events like the "Step Up 5K Run" to support our sports-related
+            initiatives. Our mission is to cultivate a thriving sports community that values excellence, inclusivity,
+            sportsmanship, and unity, with the vision of becoming a renowned sports club that not only excels in college
+            sports but also promotes an active and healthy lifestyle among students. Join us in this exciting journey
+            towards a more vibrant and active college experience! </p>
+    </div>
+
+
+
+
+    <div class="vision-mission">
+        <div class="vision-heading">Vision:</div>
+        <p>To bring the best in physical education and sports to stakeholders of RNSIT.</p>
+
+        <div class="mission-heading">Mission:</div>
+        <ol class="mission-list">
+            <li>To train students with the best infrastructure and equipment in various sports and games.</li>
+            <li>To bring about awareness among students regarding physical fitness and health.</li>
+            <li>To encourage students to participate in intra/inter-collegiate and university/zonal and national level
+                sports and games.</li>
+            <li>To organize sports and games for all levels at the institution.</li>
+        </ol>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="allbyrsc">
+        <!-- Table 1: Events by RSC -->
+        <div class="box">
+            <table class="rsc-table">
+                <h1>EVENTS BY RSC</h1>
+                <tr>
+                    <th>Event</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">RPL (RNSIT Premier League)</span></td>
+                    <td><span class="eventbyrsc-year">2021</span></td>
+                </tr>
+                <!-- Add more event rows as needed -->
+                <tr>
+                    <td><span class="eventbyrsc-name">STEPUP 4.0 (5k Run)</span></td>
+                    <td><span class="eventbyrsc-year">2022</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">8th International Yoga Day</span></td>
+                    <td><span class="eventbyrsc-year">2022</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">Teacher’s and Engineer’s Day Sports for faculties</span></td>
+                    <td><span class="eventbyrsc-year">2022</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">VTU Bengaluru South Division Football Tournament</span></td>
+                    <td><span class="eventbyrsc-year">2022</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">STEPUP 5.0 (5k Run)</span></td>
+                    <td><span class="eventbyrsc-year">2023</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">AGONES - 23 (Intra-College Sports Fest)</span></td>
+                    <td><span class="eventbyrsc-year">2023</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">9th International Yoga Day</span></td>
+                    <td><span class="eventbyrsc-year">2023</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">VTU Bengaluru South Division Badminton Tournament</span></td>
+                    <td><span class="eventbyrsc-year">2023</span></td>
+                </tr>
+                <tr>
+                    <td><span class="eventbyrsc-name">National Sports Day (Aerobics and Recreation Activities)</span>
+                    </td>
+                    <td><span class="eventbyrsc-year">2023</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- --------------------------------IMAGE GALLERY---------------------------------------- -->
+
+
+
+        <div class="aboutusrsceventgallery">
+            <div class="gallery-heading">RPL (RNSIT Premier League)</div>
+            <div class="gallery">
+                <!-- Add 6 photos for RPL here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/RPL/IMG_8756.JPG" alt="Photo 1"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/RPL/IMG_8175.JPG" alt="Photo 2"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/RPL/IMG_8203.JPG" alt="Photo 3"></div>
+                =
+            </div>
+
+            <div class="gallery-heading">Stepup 5.0</div>
+            <div class="gallery">
+                <!-- Add 6 photos for Stepup 5.0 here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Stepup/YAT_0770.JPG" alt="Photo 7"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Stepup/IMG_6679.JPG" alt="Photo 8"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Stepup/IMG_6677.JPG" alt="Photo 9"></div>
+
+            </div>
+
+            <div class="gallery-heading">AGONES 2023 Ceremony</div>
+            <div class="gallery">
+                <!-- Add 6 photos for AGONES 2023 Opening Ceremony here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/AgonesOC/YAT_0241.JPG"></div>
+                <div class="gallery-item"><img
+                        src="assets/images/EventsRSC/AgonesOC/WhatsApp Image 2023-08-10 at 4.44.34 PM.jpeg"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/AgonesOC/YAT_0276.JPG"></div>
+
+            </div>
+
+            <div class="gallery-heading">VTU BENGALURU SOUTH DIVISION TOURNAMENTS</div>
+            <div class="gallery">
+                <!-- Add 6 photos for VTU Bengaluru South Division Tournaments here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/South Zone/_MG_3215.jpg"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/South Zone/IMG_5784.JPG"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/South Zone/DSC_0023.JPG"></div>
+
+            </div>
+
+            <div class="gallery-heading">9th International Yoga Day</div>
+            <div class="gallery">
+                <!-- Add 6 photos for 9th International Yoga Day here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Yoga/DSC_0699.JPG"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Yoga/DSC_0713.JPG"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Yoga/DSC_0718.JPG"></div>
+                =
+            </div>
+
+            <div class="gallery-heading">AGONES Intra College Sports Fest</div>
+            <div class="gallery">
+                <!-- Add 6 photos for AGONES Intra College Sports Fest here -->
+                <!-- Replace placeholder image sources as needed -->
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Agones/DSC_0221.JPG"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Agones/IMG_9979.JPG"></div>
+                <div class="gallery-item"><img src="assets/images/EventsRSC/Agones/YAT_0741.JPG"></div>
+
+            </div>
+        </div>
+
+        <div class="viewallevents">
+            <button onclick="window.location.href = 'tables.html';" class="button-veiwallevents">Click here to view all
+                events</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-main">
+        <div class="footer">
+
+            <div class="description flex-footer">
+                <h5>ABOUT US</h5>
+                <p> Join the RNSIT Sports Club in our journey towards a healthier lifestyle, stronger community
+                    bonds. We stride towards a brighter future.</p>
+            </div>
+
+            <div class="quicklinks flex-footer">
+                <h5>QUICKLINKS</h5>
+                <a href="index.html">Home</a>
+                <a href="stepup.html">Step Up</a>
+                <a href="ourteam.html">Agones</a>
+                <a href="About us.html">About US</a>
+                <!-- <a href="enquire.html">Enquire</a> -->
+            </div>
+
+            <div class="contactlinks flex-footer">
+                <h5>CONTACT INFORMATION</h5>
+                <p><i class="fa fa-envelope"></i>rsc.rnsit@gmail.com</p>
+                <p><i class="fa fa-phone"></i>+91 9900251291</p>
+                <p><i class="fa fa-map-marker"></i>Bengaluru, India</p>
+            </div>
+            <div class="social-media flex-footer">
+                <h5>CONNECT HERE</h5>
+                <a href="https://www.instagram.com/rnsit_sports_club/"><i id="insta" class="fa fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            <h3> © 2023 RNSIT Sports Club. All rights reserved.</h3>
+        </div>
+
+    </footer>
+
+</body>
+
+<!-- <script>
+burger = document.querySelector('.burger')
+height = document.querySelector('.v-class')
+burger.addEventListener('click' , ()=>{
+height.classList.toggle('v-resp')
+})
+</scrip> -->
+
+<script src="assets/script.js"></script>
+
+</html>

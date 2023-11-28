@@ -1,0 +1,468 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/page1andlogos/logo.png">
+    <link rel="stylesheet" href="assets/style1.css">
+    <script src="assets/script.js"></script>
+
+    <title>RNSIT Sports Club - Enquire</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(#b9bbbf,#172542);
+        overflow: auto;
+    }
+
+
+    /* .web-name {
+        font-size: 2em;
+        text-align: center;
+        transform: translateX(-69%);
+
+    } */
+
+
+
+    section {
+        margin-top: 150px;
+        position: relative;
+        width: 100%;
+        height: 132vh;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section::before {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to bottom, #7597de, transparent);
+        z-index: 15;
+    }
+
+    section img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+
+    #textenquire {
+        position: relative;
+        /* position: absolute; */
+        
+        color: #ffdb58;
+        white-space: nowrap;
+        font-size: 6.0vw;
+        /* z-index: 19; */
+        margin: -100px 80px;
+        top: -140px;
+        transform: none !important;
+       
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top: -140px;
+    transform: translateY(0);
+  }
+}
+
+
+
+    
+
+    #btn {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 40px;
+        background: #ffdb58;
+        color: #2b1055;
+        font-size: 1.5em;
+        z-index: 9;
+        transform: translateY(100px);
+    }
+
+    #btn:hover {
+        background: #2b1055;
+        color: #ffdb58;
+    }
+
+     .sec {
+        position: relative;
+        padding: 100px;
+
+    }
+
+    .form-container {
+        position: relative;
+        width: 55%;
+        height: 500px;
+        background: rgb(160, 151, 171);
+        border-radius: 8px;
+        overflow:hidden;
+      
+    }
+
+    .form-container::before{
+        content: '';
+        position:absolute;
+        top:-25%;
+        left:0%;
+        width: 380px;
+        height: 410px;
+        background: linear-gradient(0deg, transparent,#ffdb58, #ffdb58);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        
+    }
+    .form-container::after{
+        content: '';
+        position:absolute;
+        top:-25%;
+        left:0%;
+        width: 380px;
+        height: 410px;
+        background: linear-gradient(0deg, transparent, #ffdb58,#ffdb58);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -3s;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{ transform: rotate(350deg);
+        }
+    }
+    .form{
+        position: absolute;
+        inset: 2px;
+        border-radius: 8px;
+        background-color: #28292d;
+        z-index: 10;
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .form h2{
+        color: #362f42;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.1em;  
+    }
+
+    .form-group{
+        position: relative;
+        width:400px;
+        margin-top:24px;
+        text-align: center;
+        
+    }
+
+    .form-group input,
+    .form-group textarea {
+     position: relative;
+     width: 100%;
+     padding: 20px 10px 10px;
+     background: transparent;
+     border: none;
+     outline: none;
+     color: #23242a;
+     font-size: 1em;
+     letter-spacing: 0.05em;
+     z-index: 8;
+    }
+    
+    .form-group span{
+        position: absolute;
+        left: 0;
+        padding: 20px 10px 10px;
+        font-size: 1em;
+        color: #8f8f8f;
+        pointer-events: none;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+    }
+
+    .form-group input:valid ~span,
+    .form-group input:focus ~span,
+    .form-group textarea:valid ~span,
+    .form-group textarea:focus ~span{
+ 
+        color:#ffdb58;
+        transform:translateX(0px) translateY(-34px);
+        font-size:0.77em ;
+    }
+
+    .form-group i{
+        position: absolute;
+        left:0;
+        bottom: 0 ;
+        width: 100%;
+        height:2px;
+        background: #bfbee8;
+        border-radius: 4px;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 6;
+
+    }
+
+   .form-group textarea{
+     color: white ;
+   }
+   
+
+    .form-group input:valid ~i,
+    .form-group input:focus ~i
+    {
+        height: 44px;
+
+    }
+    .form-group textarea:valid ~i,
+    .form-group textarea:focus ~i{
+        height: 70px;
+    }
+
+    button {
+        margin: 18px 4px;
+        color: rgb(237, 235, 173);
+        background-color: #4b2588;
+        padding: 8px 175px;
+        border: 2px solid rgb(40, 36, 36);
+        border-radius: 10%;
+        cursor: pointer;
+      
+    } 
+    button:hover{
+        background-color:rgb(84, 76, 151);
+        transform: scale(1.04);
+    }
+
+
+
+    /* Add the following CSS code at the end of the existing CSS code */
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .web-name {
+        transform: translateX(0);
+    }
+
+    header ul {
+        margin-top: 20px;
+    }
+
+    section {
+        height: auto;
+        padding: 50px;
+    }
+
+    #text {
+        font-size: 4.5vw;
+        margin: -50px 30px;
+        top: -90px;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    button {
+        padding: 8px 100px;
+    }
+}
+
+
+ 
+</style>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/RNS_logo.png" height="76" width="76"
+                    style="margin: 0px 10px;"></a>
+            <h2 class="web-name">RNSIT Sports Club</h2>
+
+        </div>
+
+
+        <ul class="v-class">
+            <li class="nav-list"><a href="index.html" >Home</a></li>
+            <li class="nav-list"><a href="stepup.html">Step-Up</a></li>
+            <li class="nav-list"><a href="ourteam.html">Agones</a></li>
+            <li class="nav-list"><a href="About us.html">About Us</a></li>
+            <li class="nav-list"><a href="enquire.html" class="lighten">Enquire</a></li>
+
+        </ul>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" height="110" width="110"
+                    style="margin-top: 10px;  margin-right: 20px;"></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section>
+        
+        <h2 id="textenquire">Enquire</h2>
+        <div class="form-container">
+            <div class="form">
+                <form id="enquiry-form">
+                <h2>Enquire</h2>
+                <div class="form-group">
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" id="name" name="name" required>
+                    <span>Your Name</span>
+                    <i></i>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="phone">Phone:</label> -->
+                    <input type="tel" id="phone" name="phone" required>
+                    <span>Phone Number</span>
+                    <i></i>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="email">Email:</label> -->
+                    <input type="email" id="email" name="email" required>
+                    <span>Email Id</span>
+                    <i></i>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="message">Message:</label> -->
+                    <textarea  id="message" name="message" required></textarea>
+                    <span>Message</span>
+                   <i></i>
+                </div>
+                <div class="form-group" id="butn">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+        </form>
+    </section>
+    <footer class="footer-main">
+        <div class="footer">
+           
+            <div class="description flex-footer">
+                <h5>ABOUT US</h5>
+                <p> Join the RNSIT Sports Club in our journey towards a healthier lifestyle, stronger community bonds. We stride towards a brighter future.</p>
+            </div>
+
+            <div class="quicklinks flex-footer">
+                <h5>QUICKLINKS</h5>
+                <a href="index.html">Home</a>
+                <a href="stepup.html">Step Up</a>
+                <a href="ourteam.html">Agones</a>
+                <a href="About us.html">About US</a>
+                <a href="enquire.html">Enquire</a>
+            </div>
+       
+            <div class="contactlinks flex-footer">
+                <h5>CONTACT INFORMATION</h5>
+                <p><i class="fa fa-envelope"></i>rsc.rnsit@gmail.com</p>
+                <p><i class="fa fa-phone"></i>+91 9900251291</p>
+                <p><i class="fa fa-map-marker"></i>Bengaluru, India</p>
+            </div>
+            <div class="social-media flex-footer">
+                <h5>CONNECT HERE</h5>
+                <a  href="https://www.instagram.com/rnsit_sports_club/"><i id="insta" class="fa fa-instagram"></i></a>
+            </div>
+      
+        </div>
+
+
+        <div class="copyright">
+            <h3> © 2023 RNSIT Sports Club. All rights reserved.</h3>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        
+        
+
+      
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            text.style.transform = none;
+           
+        })
+      
+    </script>
+    
+    <script>
+        const form = document.querySelector("#enquiry-form");
+        const submitBtn = document.querySelector("#submit-btn");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            // perform form validation and submit data
+        });
+    </script>
+</body>
+
+</html>
