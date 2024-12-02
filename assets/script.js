@@ -139,6 +139,33 @@ function updateImage() {
     team.src = `assets/images/Aboutus/au${x}.jpeg`;
 }
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const cards = document.querySelectorAll(".card");
 
+//   const observer = new IntersectionObserver((entries, observer) => {
+//       entries.forEach(entry => {
+//           if (entry.isIntersecting) {
+//               entry.target.classList.add("visible");
+//               observer.unobserve(entry.target); // Stop observing once it appears
+//           }
+//       });
+//   }, {
+//       threshold: 0.1 // Trigger when 10% of the card is visible
+//   });
+
+//   cards.forEach(card => {
+//       observer.observe(card);
+//   });
+// });
+function OnClick_link_1(){
+  // window.location.href="C:/SAMUDRA/OTHERS/HTML/RCS/RSC-WEBSITE/ourteam.html";
+  // window.location.href="RSC-WEBSITE/ourteam.html";
+  window.location.pathname="RSC-WEBSITE/stepup.html"
+}
+function OnClick_link_2(){
+  // window.location.href="C:/SAMUDRA/OTHERS/HTML/RCS/RSC-WEBSITE/ourteam.html";
+  // window.location.href="RSC-WEBSITE/ourteam.html";
+  window.location.pathname="RSC-WEBSITE/ourteam.html"
+}
 
 
